@@ -1,0 +1,84 @@
+<!--index.wxml-->
+<view class="page-container">
+<view class="header">
+  <view class="header-air">
+    <view>
+      空气质量 - 良
+    </view> 
+    <view>
+      郫都 - 成都市
+    </view> 
+  </view>
+
+  <view class="header-title"> 
+    <view>
+      60
+    </view> 
+    <view>
+      晴
+    </view>  
+  </view>
+  <view class="header-ad">    
+    今天天气真不错
+  </view>
+</view>
+
+</view>
+
+<view class="data-container">
+<view class="data-card">
+  <image class="data-card_icon" src="/static/温度.png" />
+  <view>
+    <view class="data-card_title">
+    室内温度
+    </view>
+    <view calss ="data-card_value">
+      {{temp}}℃
+    </view>
+  </view>
+</view>
+
+
+<view class="data-card">
+  <image class="data-card_icon" src="/static/湿度.png" />
+  <view>
+    <view class="data-card_title">
+    室内湿度
+    </view>
+    <view calss ="data-card_value">
+      {{humi}}%
+    </view>
+  </view>
+</view>
+
+
+<view class="data-card">
+  <image class="data-card_icon" src="/static/光照.png" />
+  <view>
+    <view class="data-card_title">
+    室内光照
+    </view>
+    <view calss ="data-card_value">
+      {{light}}Lux
+    </view>
+  </view>
+</view>
+
+
+<view class="data-card">
+  <image class="data-card_icon" src="/static/激活-pre.png" />
+  <view>
+    <view class="data-card_title">
+      报警模式
+    </view>
+    <view calss ="data-card_value">
+      <switch checked="" bindchange="onLedchange" color="#3d7ef9"/>
+    </view>
+  </view>
+</view>
+
+<button type="primary" style="margin-top: 20px;" bindtap="kai">开灯</button>
+<button type="warn" style="margin-top: 20px;" bindtap="guan">关灯</button>
+
+
+</view>
